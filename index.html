@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      overflow-x: hidden; /* Prevent horizontal overflow */
+      overflow-x: hidden;
     }
     canvas {
       position: fixed;
@@ -19,7 +19,7 @@
       z-index: -1;
     }
     header {
-      z-index: 10; /* Ensure header appears above the canvas */
+      z-index: 10;
     }
   </style>
 </head>
@@ -47,9 +47,15 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 px-6 max-w-5xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
-    <p class="text-lg text-center">I specialize in creating dynamic, responsive, and aesthetically pleasing websites using modern technologies like HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS.</p>
+  <section id="about" class="py-20 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2">
+          <h2 class="text-4xl font-bold text-center mb-4 md:mb-8 md:text-left">About Me</h2>
+            <p class="text-lg text-center md:text-left">I specialize in creating dynamic, responsive, and aesthetically pleasing websites using modern technologies like HTML, CSS, JavaScript, and frameworks like React and Tailwind CSS.</p>
+      </div>
+
+    <div class="md:w-1/2 flex justify-center">
+      <img src="./pic.png" alt="Bitan Dey" class="rounded-full w-60 h-60 object-cover shadow-lg">
+    </div>
   </section>
 
   <!-- Projects Section -->
